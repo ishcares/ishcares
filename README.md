@@ -1,7 +1,7 @@
 <h1 align="center">Hi, I'm Ishita 👋</h1>
 
 <p align="center">
-  B.Tech CSE · Dr Apj Technical University(Aktu) · Graduating 2027<br>
+  B.Tech CSE · Ucer,Prayagraj(Aktu) · Graduating 2027<br>
   Building AI-powered software · Targeting SWE roles at product companies
 </p>
 
