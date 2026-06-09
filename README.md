@@ -13,7 +13,7 @@
 
 | Project | Stack | Live |
 |---|---|---|
-| [RESTful Auth API](https://github.com/ishcares/auth-api) | Node.js · JWT · RBAC · Docker | [demo ↗](https://auth-api-tyi2.onrender.com) |
+| [ stateless-auth-gateway](https://github.com/ishcares/auth-api) | Node.js · JWT · RBAC · Docker | [demo ↗](https://auth-api-tyi2.onrender.com) |
 | [distributed-task-orchestrator](https://github.com/ishcares/mern-notepad-app) | React · Express · MongoDB · Docker | [demo ↗](https://spontaneous-eclair-e43cdd.netlify.app/) |
 
 ---
