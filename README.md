@@ -51,12 +51,17 @@ passions:
 
 <table>
   <tr>
-    <td width="50%">
+    <td width="50%" valign="top">
       <h3 align="center">🔒 BioLock</h3>
       <p align="center"><b>Hardware-Anchored Transaction Security Core</b></p>
+      <p align="center">
+        <img src="https://img.shields.io/badge/Java_17-Spring_Boot_3-6DB33F?style=flat-square&logo=springboot&logoColor=white" />
+        <img src="https://img.shields.io/badge/Security-NIST_P--256-0052CC?style=flat-square" />
+        <img src="https://img.shields.io/badge/Redis-In--Memory_Locks-DC382D?style=flat-square&logo=redis&logoColor=white" />
+      </p>
       <ul>
-        <li>Developer-first zero-trust authentication SDK built in Java 17 & Spring Boot.</li>
-        <li>Eliminates OTP bypass and in-flight parameter tampering using hardware-bound passkeys (<code>secp256r1</code>).</li>
+        <li>Developer-first zero-trust authentication SDK built in <b>Java 17</b> & <b>Spring Boot</b>.</li>
+        <li>Eliminates OTP bypass and in-flight parameter tampering using hardware passkeys (<code>secp256r1</code>).</li>
         <li><b>Performance SLA:</b> Sub-2ms P99 verification latency with stateless Redis replay protection.</li>
       </ul>
       <p align="center">
@@ -65,18 +70,25 @@ passions:
     </td>
 
 
-    <td width="50%">
+
+    <td width="50%" valign="top">
       <h3 align="center">📡 HiringRadar</h3>
-      <p align="center"><b>Async Data Pipeline & Semantic Search</b></p>
+      <p align="center"><b>Asynchronous Data Ingestion & Semantic Search Engine</b></p>
+      <p align="center">
+        <img src="https://img.shields.io/badge/Python-FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" />
+        <img src="https://img.shields.io/badge/PostgreSQL-AsyncPG-4169E1?style=flat-square&logo=postgresql&logoColor=white" />
+        <img src="https://img.shields.io/badge/AI-Dense_Embeddings-FF6F00?style=flat-square" />
+      </p>
       <ul>
-        <li>Asynchronous ingestion engine written in Python (FastAPI).</li>
-        <li>Normalizes unstructured live metadata into PostgreSQL schemas.</li>
-        <li>Integrates dense vector embeddings for sub-second semantic matching.</li>
+        <li>High-throughput async ingestion engine built with <b>Python</b> & <b>FastAPI</b>.</li>
+        <li>Normalizes unstructured live metadata into relational <b>PostgreSQL</b> schemas with connection pooling.</li>
+        <li>Integrates transformer-based dense vector embeddings for sub-second semantic search & candidate matching.</li>
       </ul>
       <p align="center">
-        <a href="https://github.com/ishcares"><b>Explore Projects ➔</b></a>
+        <a href="https://github.com/ishcares"><b>Explore Architecture & Code ➔</b></a>
       </p>
     </td>
+
   </tr>
 </table>
 
