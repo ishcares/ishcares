@@ -27,7 +27,7 @@ mindset: "Curious builder who loves tearing down hard backend & security problem
 passions:
   - Designing low-latency APIs in Java & Python ⚡
   - Zero-trust security & elliptic curve cryptography 🔒
-  - Sipping chai while watching JUnit test suites turn green ☕
+  - Sipping coffee while watching JUnit test suites turn green ☕
 ```
 
 ---
