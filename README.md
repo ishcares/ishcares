@@ -50,17 +50,18 @@ passions:
 <table>
   <tr>
     <td width="50%">
-      <h3 align="center">🔒 BioLock (Startup)</h3>
+      <h3 align="center">🔒 BioLock</h3>
       <p align="center"><b>Hardware-Anchored Transaction Security Core</b></p>
       <ul>
-        <li>Early-stage developer-first security SDK built in Java 17 & Spring Boot.</li>
+        <li>Developer-first zero-trust authentication SDK built in Java 17 & Spring Boot.</li>
         <li>Eliminates OTP bypass and in-flight parameter tampering using hardware-bound passkeys (<code>secp256r1</code>).</li>
         <li><b>Performance SLA:</b> Sub-2ms P99 verification latency with stateless Redis replay protection.</li>
       </ul>
       <p align="center">
-        <a href="https://github.com/ishcares/Biolock"><b>Explore Product ➔</b></a>
+        <a href="https://github.com/ishcares/Biolock"><b>View Architecture & Code ➔</b></a>
       </p>
     </td>
+
 
     <td width="50%">
       <h3 align="center">📡 HiringRadar</h3>
