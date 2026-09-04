@@ -1,39 +1,79 @@
-<h1 align="center">Hi, I'm Ishita 👋</h1>
+# Hi, I'm Ishita Chaurasia 👋
 
-<p align="center">
-  B.Tech CSE · AKTU · Graduating 2027<br>
-  Building AI-powered software & automation tools · Targeting SWE / Backend roles at product companies
+<p align="left">
+  <a href="https://linkedin.com/in/ishitachaurasia">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  </a>
+  <a href="mailto:ishita20004@gmail.com">
+    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+  </a>
+  <img src="https://img.shields.io/badge/Focus-Backend_%7C_AppSec_%7C_Distributed_Systems-1A365D?style=for-the-badge" alt="Focus" />
 </p>
 
 ---
 
-### 🚀 Projects
+### 🚀 About Me
 
-| Project | Stack | Live |
-|---|---|---|
-| **[HiringRadar](https://github.com/ishcares/HiringRadar)** | Python · FastAPI · Supabase (PostgreSQL) · sentence-transformers · AWS EC2 · Telegram API | [Try Bot ↗](https://t.me/Hiringradar_bot) |
-| **[scamshield-agent](https://github.com/ishcares/scamshield-agent)** | Python · FastAPI · RAG · Vertex AI · Gemini API | [Demo ↗](https://github.com/ishcares/scamshield-agent) |
-| **[stateless-auth-gateway](https://github.com/ishcares/auth-api)** | Node.js · JWT · RBAC · Docker | [demo ↗](https://auth-api-tyi2.onrender.com) |
+I am a **Software Development & Systems Engineer** focused on building **high-concurrency backend services, hardware-anchored security protocols, and scalable data pipelines**.
 
----
-
-### 🛠 Tech Stack
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=flat&logo=fastapi&logoColor=white)
-![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat&logo=supabase&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazon-aws&logoColor=white)
-![Google Cloud / Vertex AI](https://img.shields.io/badge/Google_Cloud-4285F4?style=flat&logo=google-cloud&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=nodedotjs&logoColor=white)
+* 🔭 **Currently Building:** [BioLock](https://github.com/ishcares/Biolock) — an open-source zero-trust transaction authorization engine in Java (Spring Boot) & Redis, enforcing `secp256r1` elliptic curve hardware signatures with sub-2ms verification latency.
+* ⚡ **Core Competencies:** Java 17/21, Spring Boot, Python, REST APIs, Cryptographic Systems (JCA/ECDSA), Redis Caching, PostgreSQL, Docker, and Cloud Infrastructure (AWS).
+* 💡 **Interests:** Zero-trust architecture, high-throughput microservices, API security, and database indexing.
 
 ---
 
-### 📫 Let's connect
+### 🛠️ Technical Stack & Toolchain
 
-💼 **Open to SWE Internships & New Grad Roles** (India, 2026–27)
+<p align="left">
+  <!-- Languages -->
+  <img src="https://img.shields.io/badge/Java_17%2F21-ED8B00?style=flat-square&logo=openjdk&logoColor=white" />
+  <img src="https://img.shields.io/badge/Python_3.x-3776AB?style=flat-square&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/SQL-336791?style=flat-square&logo=postgresql&logoColor=white" />
+  <!-- Frameworks & Storage -->
+  <img src="https://img.shields.io/badge/Spring_Boot_3-6DB33F?style=flat-square&logo=springboot&logoColor=white" />
+  <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" />
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" />
+  <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white" />
+  <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white" />
+  <!-- Infrastructure & Tools -->
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" />
+  <img src="https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazon-aws&logoColor=white" />
+  <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" />
+  <img src="https://img.shields.io/badge/JUnit_5-25A162?style=flat-square&logo=junit5&logoColor=white" />
+</p>
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/ishitachaurasia)
-[![Email](https://img.shields.io/badge/Gmail-D14836?style=flat&logo=gmail&logoColor=white)](mailto:ishita20004@gmail.com)
-[![Portfolio](https://img.shields.io/badge/portfolio-D74894?style=flat&logo=portfolio&logoColor=white)](https://ishcares.github.io/portfolio/)
+---
+
+### 🏆 Featured Engineering Systems
+
+```
+┌────────────────────────────────────────────────────────────────────────────────────────┐
+│ 🔒 BioLock: Hardware-Anchored Transaction Authorization SDK                            │
+│    • High-throughput zero-trust verification engine built in Java 17 & Spring Boot 3.  │
+│    • Verifies NIST P-256 (secp256r1) elliptic curve signatures from Apple Secure       │
+│      Enclave & Android StrongBox to block OTP-bypass and in-transit amount tampering.  │
+│    • Benchmarked < 2ms P99 verification latency; stateless Redis replay protection.    │
+│    🔗 Repository: https://github.com/ishcares/Biolock                                  │
+├────────────────────────────────────────────────────────────────────────────────────────┤
+│ 📡 HiringRadar: Asynchronous Ingestion & Semantic Matching Pipeline                    │
+│    • High-throughput asynchronous backend service built with Python (FastAPI).         │
+│    • Ingests and normalizes live endpoint data into normalized PostgreSQL schemas.     │
+│    • Integrates dense vector embeddings for sub-second semantic retrieval & search.    │
+│    🔗 Repository: https://github.com/ishcares                                          │
+└────────────────────────────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+### 📊 GitHub Activity & Metrics
+
+<p align="left">
+  <img src="https://github-readme-stats.vercel.app/api?username=ishcares&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="Ishita's GitHub Stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ishcares&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" />
+</p>
+
+---
+
+### 🤝 Connect with Me
+* 💼 **LinkedIn:** [linkedin.com/in/ishitachaurasia](https://linkedin.com/in/ishitachaurasia)
+* 📧 **Direct Email:** [ishita20004@gmail.com](mailto:ishita20004@gmail.com)
