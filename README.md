@@ -2,7 +2,7 @@
 
   # ✨ Hi there, I'm Ishita! 👋
   
-  ### 🚀 CS Undergrad • Backend Explorer • Systems & Security Enthusiast
+  ### 🚀 CS Undergrad ('27) • Backend Explorer • Systems & Security Enthusiast
 
   <p align="center">
     <a href="https://linkedin.com/in/ishitachaurasia"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
