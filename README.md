@@ -6,9 +6,11 @@
 
   <p align="center">
     <a href="https://linkedin.com/in/ishitachaurasia"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+    <a href="https://leetcode.com/u/ishita1106/"><img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" /></a>
     <a href="mailto:ishita20004@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" /></a>
     <img src="https://komarev.com/ghpvc/?username=ishcares&label=Profile%20Views&color=7928CA&style=for-the-badge" alt="Views" />
   </p>
+
 
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=1,11,21,31&height=180&section=header&text=Building%20systems%20brick%20by%20brick%20☕&fontSize=32&fontColor=ffffff&animation=twinkling" width="100%" />
 
