@@ -1,5 +1,9 @@
 <div align="center">
 
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0ea5e9,50:6366f1,100:0ea5e9&height=3&section=header" width="100%" />
+
+<br/>
+
 # ISHITA CHAURASIA
 
 ### Backend Systems · Security · Fintech
@@ -8,17 +12,26 @@
 
 <br/>
 
+[![Focus: Backend Systems](https://img.shields.io/badge/FOCUS-Backend%20Systems-0ea5e9?style=flat-square&labelColor=0f172a)](https://github.com/ishcares)
+[![Domain: Security & Fintech](https://img.shields.io/badge/DOMAIN-Security%20%26%20Fintech-6366f1?style=flat-square&labelColor=0f172a)](https://github.com/ishcares)
+[![Status: Building](https://img.shields.io/badge/STATUS-Active%20Systems-10b981?style=flat-square&labelColor=0f172a)](https://github.com/ishcares)
+
+<br/>
+
 `BUILD` &nbsp;→&nbsp; `BREAK` &nbsp;→&nbsp; `MEASURE` &nbsp;→&nbsp; `UNDERSTAND` &nbsp;→&nbsp; `IMPROVE`
 
 <br/>
 
-[`BIOLOCK`](#biolock) &nbsp;·&nbsp; [`HIRINGRADAR`](#hiringradar) &nbsp;·&nbsp; [`LEETCODE`](https://leetcode.com/u/ishita1106/) &nbsp;·&nbsp; [`LINKEDIN`](https://linkedin.com/in/ishitachaurasia) &nbsp;·&nbsp; [`EMAIL`](mailto:ishita20004@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin&logoColor=white&labelColor=0f172a)](https://linkedin.com/in/ishitachaurasia)
+[![LeetCode](https://img.shields.io/badge/LeetCode-Profile-FFA116?style=flat-square&logo=leetcode&logoColor=white&labelColor=0f172a)](https://leetcode.com/u/ishita1106/)
+[![GitHub](https://img.shields.io/badge/GitHub-ishcares-181717?style=flat-square&logo=github&logoColor=white&labelColor=0f172a)](https://github.com/ishcares)
+[![Email](https://img.shields.io/badge/Email-Contact-EA4335?style=flat-square&logo=gmail&logoColor=white&labelColor=0f172a)](mailto:ishita20004@gmail.com)
 
 </div>
 
 <br/>
 
----
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0ea5e9,50:6366f1,100:0ea5e9&height=1&section=header" width="100%" />
 
 ### 01 / FEATURED SYSTEMS
 
@@ -39,7 +52,13 @@ BioLock binds each authorization to a deterministic canonical payload (`txId | a
 
 <br/>
 
-`STACK` &nbsp; Java 17 · Spring Boot 3.2.2 · JCA · ECDSA (secp256r1) · JUnit 5  
+[![Java 17](https://img.shields.io/badge/Java-17-ED8B00?style=flat-square&logo=openjdk&logoColor=white&labelColor=0f172a)](https://openjdk.org/)
+[![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.2.2-6DB33F?style=flat-square&logo=springboot&logoColor=white&labelColor=0f172a)](https://spring.io/projects/spring-boot)
+[![JCA](https://img.shields.io/badge/JCA-ECDSA%20%2F%20P--256-0ea5e9?style=flat-square&labelColor=0f172a)](https://github.com/ishcares/Biolock)
+[![Live Demo](https://img.shields.io/badge/Live%20API-Verified-10b981?style=flat-square&logo=render&logoColor=white&labelColor=0f172a)](https://biolock-28kv.onrender.com/api/demo/run)
+
+<br/>
+
 `STATUS` &nbsp; Reference backend (in-memory state) · Redis architecture roadmap  
 `ACCESS` &nbsp; [Repository ↗](https://github.com/ishcares/Biolock) · [Live Demo API ↗](https://biolock-28kv.onrender.com/api/demo/run)
 
@@ -59,7 +78,13 @@ HiringRadar is an asynchronous pipeline that ingests live job feeds across 35+ c
 
 <br/>
 
-`STACK` &nbsp; Python · FastAPI · PostgreSQL · Cloudflare Workers AI · Telegram API  
+[![Python](https://img.shields.io/badge/Python-3.11-3776AB?style=flat-square&logo=python&logoColor=white&labelColor=0f172a)](https://python.org)
+[![FastAPI](https://img.shields.io/badge/FastAPI-Framework-009688?style=flat-square&logo=fastapi&logoColor=white&labelColor=0f172a)](https://fastapi.tiangolo.com)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Neon%20Serverless-4169E1?style=flat-square&logo=postgresql&logoColor=white&labelColor=0f172a)](https://neon.tech)
+[![Telegram](https://img.shields.io/badge/Telegram%20Bot-Active-26A5E4?style=flat-square&logo=telegram&logoColor=white&labelColor=0f172a)](https://t.me/Hiringradar_bot)
+
+<br/>
+
 `STATUS` &nbsp; Production deployment serving registered student subscribers  
 `ACCESS` &nbsp; [Repository ↗](https://github.com/ishcares/HiringRadar) · [Telegram Bot ↗](https://t.me/Hiringradar_bot)
 
@@ -69,7 +94,7 @@ HiringRadar is an asynchronous pipeline that ingests live job feeds across 35+ c
 
 <br/>
 
----
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0ea5e9,50:6366f1,100:0ea5e9&height=1&section=header" width="100%" />
 
 ### 02 / ENGINEERING MINDSET
 
@@ -83,7 +108,7 @@ HiringRadar is an asynchronous pipeline that ingests live job feeds across 35+ c
 
 <br/>
 
----
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0ea5e9,50:6366f1,100:0ea5e9&height=1&section=header" width="100%" />
 
 ### 03 / FOCUS & TOOLING
 
@@ -97,7 +122,7 @@ HiringRadar is an asynchronous pipeline that ingests live job feeds across 35+ c
 
 <br/>
 
----
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0ea5e9,50:6366f1,100:0ea5e9&height=1&section=header" width="100%" />
 
 ### 04 / THINGS I KEEP THINKING ABOUT
 
@@ -108,7 +133,7 @@ HiringRadar is an asynchronous pipeline that ingests live job feeds across 35+ c
 
 <br/>
 
----
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0ea5e9,50:6366f1,100:0ea5e9&height=1&section=header" width="100%" />
 
 ### 05 / REPOSITORY INDEX
 
@@ -119,7 +144,7 @@ HiringRadar is an asynchronous pipeline that ingests live job feeds across 35+ c
 
 <br/>
 
----
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0ea5e9,50:6366f1,100:0ea5e9&height=1&section=header" width="100%" />
 
 ### 06 / FOUNDATIONS
 
@@ -129,7 +154,7 @@ Data Structures & Algorithms · Object-Oriented Design · Operating Systems · D
 
 <br/>
 
----
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0ea5e9,50:6366f1,100:0ea5e9&height=1&section=header" width="100%" />
 
 <div align="center">
 
@@ -138,5 +163,9 @@ Data Structures & Algorithms · Object-Oriented Design · Operating Systems · D
 <br/>
 
 [LinkedIn](https://linkedin.com/in/ishitachaurasia) &nbsp;·&nbsp; [LeetCode](https://leetcode.com/u/ishita1106/) &nbsp;·&nbsp; [GitHub](https://github.com/ishcares) &nbsp;·&nbsp; [Email](mailto:ishita20004@gmail.com)
+
+<br/>
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0ea5e9,50:6366f1,100:0ea5e9&height=2&section=header" width="100%" />
 
 </div>
