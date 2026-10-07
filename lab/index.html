@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Break BioLock — Interactive Security Challenge</title>
+  <meta name="description" content="Can you alter an authorized transaction without getting caught? An interactive security engineering challenge based on BioLock.">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+  <!-- Ambient background glow -->
+  <div class="ambient-glow glow-violet" aria-hidden="true"></div>
+  <div class="ambient-glow glow-cyan" aria-hidden="true"></div>
+
+  <!-- Top Persistent HUD -->
+  <header class="lab-header">
+    <div class="brand-section">
+      <div class="status-dot" aria-hidden="true"></div>
+      <div class="brand-title">BIOLOCK <span style="color: var(--text-muted); font-family: var(--font-mono); font-size: 0.72rem;">// SECURITY LAB</span></div>
+    </div>
+
+    <!-- Mission Tabs -->
+    <nav class="mission-nav" aria-label="Game Missions">
+      <button type="button" class="mission-tab active" data-mission="1">01 INFLATE AMOUNT</button>
+      <button type="button" class="mission-tab" data-mission="2">02 DIVERT PAYEE</button>
+      <button type="button" class="mission-tab" data-mission="3">03 TOKEN SWAP</button>
+    </nav>
+
+    <!-- Header Actions -->
+    <div class="hud-actions">
+      <button type="button" class="hud-btn" id="btn-sound-toggle" aria-label="Toggle Sound Effects">🔊 SOUND: ON</button>
+      <button type="button" class="hud-btn" id="btn-open-arch">⚙️ ARCHITECTURE</button>
+      <a href="https://github.com/ishcares/Biolock" target="_blank" rel="noopener noreferrer" class="hud-btn">GITHUB ↗</a>
+    </div>
+  </header>
+
+  <!-- Main Game Stage -->
+  <main class="lab-main">
+
+    <!-- Screen 1: The Hook (Curious) -->
+    <section class="game-screen screen-landing glass-panel active" id="screen-landing">
+      <div class="landing-pill">
+        <span>⚡</span> MINI-CHALLENGE · ~45 SECONDS
+      </div>
+
+      <h1 class="landing-title">CAN YOU STEAL THE PAYMENT?</h1>
+      <p class="landing-sub">You just intercepted an authorized ₹2,500 transfer in transit.</p>
+
+      <div class="target-preview-box">
+        <div>
+          <div class="target-label">INTERCEPTED TARGET</div>
+          <div style="font-size: 0.88rem; color: var(--text-secondary); margin-top: 2px;">Payee: merchant@pay.example</div>
+        </div>
+        <div style="text-align: right;">
+          <div class="target-label">ORIGINAL AMOUNT</div>
+          <div class="target-val">₹2,500</div>
+        </div>
+      </div>
+
+      <button type="button" class="btn-big-attack" id="btn-start-intercept">
+        ⚡ HIJACK THE PAYMENT
+      </button>
+
+      <div class="landing-footnote">
+        No login · Zero jargon upfront · Pure attacker perspective
+      </div>
+    </section>
+
+    <!-- Screen 2: The Attack (Action) -->
+    <section class="game-screen" id="screen-attack">
+      <div class="stage-grid">
+        
+        <!-- Left Column: 1. WHAT AM I ATTACKING? -->
+        <div class="glass-panel">
+          <div class="panel-header">
+            <div class="panel-title">
+              <span>1.</span> WHAT AM I ATTACKING?
+            </div>
+            <div class="badge-tag badge-green" id="tx-badge">● IN-FLIGHT PACKET</div>
+          </div>
+
+          <div class="card-padding">
+            <div class="tx-item" id="row-amount">
+              <span class="tx-label">AMOUNT</span>
+              <div class="tx-val" id="display-amount">₹2,500</div>
+            </div>
+
+            <div class="tx-item" id="row-payee">
+              <span class="tx-label">RECIPIENT (UPI)</span>
+              <div class="tx-val" id="display-payee">merchant@pay.example</div>
+            </div>
+
+            <div class="tx-item">
+              <span class="tx-label">TRANSACTION ID</span>
+              <div class="tx-val" style="font-size: 0.8rem; color: var(--text-muted);">tx_8f91c2d0-e14b</div>
+            </div>
+
+            <div class="tx-item">
+              <span class="tx-label">NONCE (CHALLENGE)</span>
+              <div class="tx-val" style="font-size: 0.8rem; color: var(--text-muted);">8F91C2D4A3</div>
+            </div>
+
+            <!-- Digital Seal: Verified Accurate Wording -->
+            <div class="digital-seal-box">
+              <div class="seal-icon">🔒</div>
+              <div class="seal-text">
+                <strong style="color: #fff;">AUTHORIZED BY CRYPTOGRAPHIC SIGNATURE</strong><br/>
+                Authorization is bound to the transaction before transmission.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: 2. WHAT CAN I CHANGE? & 3. LET ME TRY -->
+        <div class="glass-panel">
+          <div class="panel-header">
+            <div class="panel-title">
+              <span>2.</span> WHAT CAN I CHANGE?
+            </div>
+            <span style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--accent-cyan-bright);">CHOOSE ATTACK</span>
+          </div>
+
+          <div class="card-padding attack-box">
+            <div>
+              <div class="prompt-step">ATTACK VECTOR</div>
+              <div class="prompt-question" id="attack-prompt-question">Select an attack modification:</div>
+            </div>
+
+            <!-- Sophisticated Numbered Options -->
+            <div class="attack-options-list" id="attack-choices">
+              <!-- Injected dynamically -->
+            </div>
+
+            <!-- 3. LET ME TRY -->
+            <button type="button" class="transmit-btn" id="btn-transmit">
+              🚀 3. TRANSMIT MODIFIED PAYMENT →
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Screen 3: The Suspense (Did I get through?) -->
+    <section class="game-screen screen-suspense glass-panel" id="screen-suspense">
+      <div class="scanner-ring" aria-hidden="true"></div>
+      <div class="suspense-status" id="suspense-status">EVALUATING AT SERVER...</div>
+      <h2 class="suspense-headline">4. DID I GET THROUGH?</h2>
+
+      <div class="diff-flash-box">
+        <div>
+          <div style="color: var(--text-muted); font-size: 0.72rem; margin-bottom: 4px;">DEVICE SIGNED</div>
+          <div style="color: var(--status-success); font-weight: 700; font-size: 1rem;" id="suspense-orig">₹2,500</div>
+        </div>
+        <div style="color: var(--text-muted); align-self: center;">VS</div>
+        <div>
+          <div style="color: var(--text-muted); font-size: 0.72rem; margin-bottom: 4px;">SERVER RECEIVED</div>
+          <div style="color: var(--status-danger); font-weight: 700; font-size: 1rem;" id="suspense-mod">₹25,000</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Screen 4: The Reveal & Explanation (Oh, it caught me!) -->
+    <section class="game-screen screen-caught glass-panel" id="screen-caught">
+      <div class="alarm-icon">✕</div>
+      <h2 class="caught-title">CAUGHT IN 0.3 SECONDS.</h2>
+      <div class="caught-sub">TRANSACTION REJECTED & BLOCKED</div>
+
+      <div class="caught-summary-card" id="caught-summary">
+        <!-- Injected dynamically in plain English -->
+      </div>
+
+      <!-- Technical Deep-Dive Box -->
+      <div class="tech-details-box">
+        <div class="tech-details-title">
+          <span>⚙️</span> HOW THE SECURITY MATHEMATICALLY PROVED IT
+        </div>
+        <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5;">
+          The sender's device compiled a deterministic <strong>canonical payload</strong> binding the exact fields:
+        </p>
+        <div class="tech-formula" id="tech-formula-str">
+          tx_8f91c2d0-e14b | 25000.00 | merchant@pay.example | 8F91C2D4A3 | 1775480000000
+        </div>
+        <p style="font-size: 0.82rem; color: var(--text-muted); line-height: 1.5;">
+          Because the client signature only validated the hash of <code>2500.00</code>, injecting <code>25000.00</code> produced a completely different SHA-256 digest. The server's <strong>ECDSA verification over NIST P-256 (secp256r1)</strong> failed closed instantly.
+        </p>
+      </div>
+
+      <div class="caught-actions">
+        <button type="button" class="btn-next-mission" id="btn-next-step">
+          TRY ATTACK 02: REDIRECT PAYEE →
+        </button>
+        <button type="button" class="btn-secondary-action" id="btn-retry-step">
+          TRY ANOTHER AMOUNT
+        </button>
+      </div>
+    </section>
+
+    <!-- Screen 5: Mission 3 (Interactive Token Swap Challenge) -->
+    <section class="game-screen glass-panel m3-container" id="screen-mission3">
+      <div class="panel-header" style="margin: -32px -28px 20px -28px;">
+        <div class="panel-title">
+          <span>●</span> MISSION 03: CAN YOU SWAP AUTHORIZATIONS?
+        </div>
+        <span class="badge-tag badge-green">TOKEN SWAP TEST</span>
+      </div>
+
+      <p style="color: var(--text-secondary); font-size: 0.88rem; margin-bottom: 20px; line-height: 1.5;">
+        You intercepted two legitimate authorizations. Can you detach the authorization from the <strong>₹8,500 purchase</strong> and attach it to the <strong>₹1,200 utility bill</strong>?
+      </p>
+
+      <!-- Target Transaction -->
+      <div style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--text-muted); margin-bottom: 8px;">
+        1. TARGET TRANSACTION TO SETTLE:
+      </div>
+      <div class="m3-target-card">
+        <div>
+          <div style="font-weight: 700; color: #fff; font-size: 0.95rem;">TX A // Utility Bill</div>
+          <div style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 2px;">Payee: <code>utility.electric@upi</code> · Nonce: <code>4A1B8F</code></div>
+        </div>
+        <div style="text-align: right;">
+          <div style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--text-muted);">BILL AMOUNT</div>
+          <div style="font-family: var(--font-mono); font-size: 1.15rem; font-weight: 700; color: #fff;">₹1,200</div>
+        </div>
+      </div>
+
+      <!-- Available Tokens -->
+      <div style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--text-muted); margin-bottom: 8px;">
+        2. CHOOSE AUTHORIZATION TOKEN TO ATTACH:
+      </div>
+      <div class="m3-tokens-grid">
+        <div class="m3-token-card" id="m3-token-legit" data-auth="authA" tabindex="0">
+          <div style="display: flex; justify-content: space-between; margin-bottom: 4px;">
+            <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent-cyan-bright); font-weight: 600;">AUTH TOKEN #1</span>
+            <span style="font-family: var(--font-mono); font-size: 0.75rem; color: #fff;">₹1,200</span>
+          </div>
+          <div style="font-size: 0.78rem; color: var(--text-secondary);">Bound to Nonce: <code>4A1B8F</code></div>
+          <div style="font-size: 0.72rem; color: var(--text-muted); margin-top: 4px;">Original target: Utility Bill</div>
+        </div>
+
+        <div class="m3-token-card selected" id="m3-token-swapped" data-auth="authB" tabindex="0">
+          <div style="display: flex; justify-content: space-between; margin-bottom: 4px;">
+            <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent-violet-light); font-weight: 600;">AUTH TOKEN #2 (SWAP)</span>
+            <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--status-danger); font-weight: 700;">₹8,500</span>
+          </div>
+          <div style="font-size: 0.78rem; color: var(--text-secondary);">Bound to Nonce: <code>9C2D1E</code></div>
+          <div style="font-size: 0.72rem; color: var(--text-muted); margin-top: 4px;">Original target: Electronics Order</div>
+        </div>
+      </div>
+
+      <!-- Action Button -->
+      <button type="button" class="transmit-btn" id="btn-attach-auth" style="margin-top: 0; width: 100%;">
+        ATTACH AUTHORIZATION & TRANSMIT →
+      </button>
+
+      <!-- Explicit Result Box -->
+      <div class="m3-result-box" id="m3-result-panel">
+        <div style="display: flex; align-items: center; justify-content: space-between;">
+          <h4 id="m3-res-title" style="font-size: 1rem; font-weight: 800; letter-spacing: 0.04em;"></h4>
+          <span class="badge-tag" id="m3-res-badge"></span>
+        </div>
+
+        <table class="m3-diff-table" id="m3-diff-table">
+          <!-- Injected dynamically -->
+        </table>
+
+        <p id="m3-res-desc" style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5; margin-top: 8px;"></p>
+      </div>
+
+      <div style="text-align: center; margin-top: 24px;">
+        <button type="button" class="btn-big-attack" style="font-size: 0.82rem; padding: 11px 22px;" onclick="location.reload()">
+          REPLAY LAB FROM MISSION 01
+        </button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Architecture Modal Sheet -->
+  <aside class="modal-overlay" id="arch-modal" aria-hidden="true">
+    <div class="modal-sheet">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+        <h3 style="color: #fff; font-size: 1.1rem;">BioLock Verification Architecture</h3>
+        <button type="button" id="btn-close-arch" style="background: none; border: none; color: var(--text-muted); font-size: 1.5rem; cursor: pointer;">&times;</button>
+      </div>
+
+      <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 14px; line-height: 1.5;">
+        Traditional mobile payment flows authenticate the <em>user</em> (via biometric prompt or PIN), producing an authorization token that is transmitted alongside transaction parameters. If a rogue intermediary alters the payload, identity verification may still succeed even though the payment was tampered.
+      </p>
+
+      <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent-cyan-bright); margin-top: 14px;">
+        REFERENCE IMPLEMENTATION (Java 17 / ECDSAValidator.java):
+      </div>
+      <pre class="code-viewer"><code>// Deterministic payload binding in BioLock
+public byte[] buildCanonicalPayload(String txId, Double amount, String payeeUpi, 
+                                    String challengeNonce, Long timestamp) {
+    if (txId == null || amount == null || payeeUpi == null || 
+        challengeNonce == null || timestamp == null) {
+        throw new IllegalArgumentException("Payload attributes must not be null");
+    }
+    String canonical = String.format("%s|%.2f|%s|%s|%d",
+        txId, amount, payeeUpi, challengeNonce, timestamp);
+    return canonical.getBytes(StandardCharsets.UTF_8);
+}</code></pre>
+
+      <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.5;">
+        BioLock evaluates signatures via the Java Cryptography Architecture (JCA) using <code>SHA256withECDSA</code> over the <code>secp256r1</code> (NIST P-256) curve. Transactions follow strict one-time state transitions (<code>PENDING</code> → <code>VERIFIED</code> or <code>FAILED</code>), failing closed on any deviation.
+      </p>
+
+      <div style="margin-top: 20px; text-align: right;">
+        <a href="https://github.com/ishcares/Biolock" target="_blank" rel="noopener noreferrer" class="btn-big-attack" style="font-size: 0.8rem; padding: 10px 18px;">
+          EXPLORE GITHUB CODE ↗
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <script src="./script.js"></script>
+</body>
+</html>
