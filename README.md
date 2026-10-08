@@ -16,7 +16,7 @@
 
 <br/>
 
-[`⚡ PLAY WITH THE SYSTEMS`](#--play-with-the-systems) &nbsp;·&nbsp; [`ABOUT ME`](#02--about-me) &nbsp;·&nbsp; [`BIOLOCK`](#03--featured-systems) &nbsp;·&nbsp; [`HIRINGRADAR`](#03--featured-systems) &nbsp;·&nbsp; [`LEETCODE`](https://leetcode.com/u/ishita1106/) &nbsp;·&nbsp; [`LINKEDIN`](https://linkedin.com/in/ishitachaurasia) &nbsp;·&nbsp; [`EMAIL`](mailto:ishita20004@gmail.com)
+[`🌐 PORTFOLIO`](https://ishcares.github.io/portfolio/) &nbsp;·&nbsp; [`⚡ PLAY WITH THE SYSTEMS`](#--play-with-the-systems) &nbsp;·&nbsp; [`ABOUT ME`](#02--about-me) &nbsp;·&nbsp; [`BIOLOCK`](#03--featured-systems) &nbsp;·&nbsp; [`HIRINGRADAR`](#03--featured-systems) &nbsp;·&nbsp; [`LEETCODE`](https://leetcode.com/u/ishita1106/) &nbsp;·&nbsp; [`LINKEDIN`](https://linkedin.com/in/ishitachaurasia) &nbsp;·&nbsp; [`EMAIL`](mailto:ishita20004@gmail.com)
 
 <br/>
 
@@ -79,7 +79,22 @@
 
 <table>
 <tr>
-<td width="50%" valign="top">
+<td width="32%" align="center" valign="top">
+
+<img src="assets/ishita.jpg" width="100%" alt="Ishita Chaurasia" style="border-radius: 6px; box-shadow: 0 12px 28px rgba(0,0,0,0.4);" />
+
+<br/><br/>
+
+**ISHITA CHAURASIA**  
+<sub>Computer Science Engineer · May 2027</sub>  
+<sub>Java Backend · Systems · Cloud · Security</sub>
+
+<br/>
+
+[**🌐 Visit Portfolio Website ↗**](https://ishcares.github.io/portfolio/)
+
+</td>
+<td width="68%" valign="top">
 
 ### *“I’m interested in the space where software has consequences.”*
 
@@ -91,38 +106,17 @@ I like building, breaking, measuring, and going back to understand what I missed
 
 <br/>
 
-<sub>Outside the code, I’m fascinated by how people notice detail — in interfaces, products, design, and the tiny decisions that make something feel intuitive.</sub>
-
-<br/><br/>
-
-`CURRENT MODE` &nbsp; **BUILDING**  
-<sub>`BUILDING` → `BREAKING` → `LEARNING` → `REBUILDING`</sub>
-
-</td>
-<td width="50%" valign="top">
-
 ```text
-CURRENTLY
-Computer Science · 2027
-
-BUILDING
-Backend systems
-Security experiments
-Fintech infrastructure
-
-PRIMARY
-Java 17 · Spring Boot
-
-EXPLORING
-Distributed systems
-Security architecture
-Applied AI
+CURRENTLY   Computer Science Engineer · Graduating May 2027
+TARGET      2027 Graduate Backend / Systems / FinTech / AppSec (UK / Global)
+PRIMARY     Java 17 (JCA) · Spring Boot · Python · PostgreSQL · Redis
+EXPLORING   Distributed Systems · Concurrency · Linux Internals · Tail Latency
 ```
 
 <br/>
 
-**AREAS OF FOCUS**  
-`BACKEND` &nbsp;·&nbsp; `SECURITY` &nbsp;·&nbsp; `FINTECH` &nbsp;·&nbsp; `SYSTEMS` &nbsp;·&nbsp; `AUTOMATION`
+**DIRECT CHANNELS**  
+[Portfolio](https://ishcares.github.io/portfolio/) &nbsp;·&nbsp; [GitHub](https://github.com/ishcares) &nbsp;·&nbsp; [LeetCode](https://leetcode.com/u/ishita1106/) &nbsp;·&nbsp; [LinkedIn](https://linkedin.com/in/ishitachaurasia) &nbsp;·&nbsp; [Email](mailto:ishita20004@gmail.com)
 
 </td>
 </tr>
@@ -268,7 +262,7 @@ Data Structures & Algorithms · Object-Oriented Design · Operating Systems · D
 
 <br/>
 
-[GitHub](https://github.com/ishcares) &nbsp;·&nbsp; [LinkedIn](https://linkedin.com/in/ishitachaurasia) &nbsp;·&nbsp; [LeetCode](https://leetcode.com/u/ishita1106/) &nbsp;·&nbsp; [Email](mailto:ishita20004@gmail.com)
+[Portfolio Website](https://ishcares.github.io/portfolio/) &nbsp;·&nbsp; [GitHub](https://github.com/ishcares) &nbsp;·&nbsp; [LinkedIn](https://linkedin.com/in/ishitachaurasia) &nbsp;·&nbsp; [LeetCode](https://leetcode.com/u/ishita1106/) &nbsp;·&nbsp; [Email](mailto:ishita20004@gmail.com)
 
 <br/>
 
