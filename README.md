@@ -79,9 +79,7 @@
 
 <table>
 <tr>
-<td width="32%" align="center" valign="top">
-
-<img src="assets/ishita.jpg" width="100%" alt="Ishita Chaurasia" style="border-radius: 6px; box-shadow: 0 12px 28px rgba(0,0,0,0.4);" />
+<td>
 
 <br/><br/>
 
