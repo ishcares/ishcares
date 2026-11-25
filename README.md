@@ -124,7 +124,6 @@ EXPLORING   Distributed Systems · Concurrency · Linux Internals · Tail Latenc
 
 <br/>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0ea5e9,50:6366f1,100:0ea5e9&height=1&section=header" width="100%" />
 
 ## 03 / FEATURED SYSTEMS
 
